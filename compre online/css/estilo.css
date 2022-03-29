@@ -1,0 +1,649 @@
+@charset "UTF-8"; 
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    /*font-family: 'MuseoModerno', cursive;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444;
+
+}
+
+input, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cabecalho{
+    background: url(../images/grain.png) #18335f;
+    height: 90px;
+    padding:40px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff0a ;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    
+}
+
+.logo{
+    width: 200px;
+
+}
+.menu-botao{
+    display: none;
+}
+
+.menu-titulo{
+    display: none;
+}
+
+.menu-logo{
+    display: none;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: 33px 24px;
+    position: relative;
+    
+
+    
+}
+.menu-item:hover{
+    background-color: #0a295e;
+}
+
+.menu-item:hover .menu-sublist{
+    display: flex;
+
+}
+.menu-item a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.menu-item img{
+    margin-left: 10px;
+}
+
+.menu-sublist{
+    display: none;
+    background-color:#1e3e74 ;
+    flex-direction: column;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.menu-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex ;
+    flex-direction: row;
+}
+
+.menu-fundo{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.menu-fundo-ativo{
+    display: block;
+}
+
+.menu-fechar{
+    display: none;
+}
+
+.fale-conosco{
+    display: flex;
+    justify-content: center;
+    padding: 16px 48px;
+    background: url(../images/grain.png) #18335f;
+    color: #fff;
+    margin-top: 90px;
+  align-items: center;
+    
+   
+    
+}
+
+.fale-conosco h1{
+    font-family: 'MuseoModerno', sans-serif;
+    font-weight: 700px;
+    line-height: 110%;
+    font-size: 40px;
+    margin: 0;
+   
+}
+
+.fale-conosco img{
+    margin-top: 30px;
+    margin-bottom: -16px;
+    max-width: 622px;
+    max-height: 590px;
+}
+
+.fale-conosco-texto{
+
+    padding: 8px 0;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 300px;
+    
+}
+.fale-conosco-texto button{
+    margin: 40px 0;
+}
+
+.fale-conosco-img{
+    display: flex;
+    align-items: center;
+
+}
+
+.perguntas-frequentes{
+    display: flex;
+    padding: 32px;
+    flex: 5 1;
+}
+.perguntas-frequentes-texto{
+    width: 50%;
+}
+
+.perguntas-frequentes-rotulo{
+    color: #e28d40;
+    font-weight: 600;
+    margin: 0;
+}
+
+.perguntas-frequentes-texto h1{
+    font-family: MuseoModerno,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 8px 0;
+    line-height: 110%;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+}
+.card-item img{
+    padding-right: 28px;
+}
+
+.card-item p{
+    margin: 0;
+    color: #8a8a8a;
+}
+
+.card-item span{
+    font-weight: bold;
+}
+
+.linha{
+    display: flex;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 22px 24px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+input:focus, textarea:focus{
+    border-color: #e28d40;
+    outline: none;
+}
+
+.coluna{
+    padding: 22px 24px;
+    flex: 1;
+}
+
+.formulario label{
+    font-weight: bold ;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+button{
+    background-color: #e28f40;
+    text-shadow: none;
+    color: #fff;
+    font-family: MuseoModerno,sans-serif;
+    font-weight: 700;
+    border: none;
+    padding: 18px 41px;
+    background-color: #e28f40;
+    border-radius: 0 20px;
+    font-size: 16px;
+}
+
+button:hover{
+    box-shadow: inset 2px 2px 2px rgb(0 0 0 / 20%);
+    background: #f2a35a;
+
+}
+
+.rodape-conteudo{
+    display: flex;
+    width: 100%;
+    padding: 104px 20px;
+
+}
+.rodape-conteudo > div{
+    flex: 1;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
+}
+.rodape-conteudo h3{
+    margin: 0;
+    font-family: MuseoModerno;
+    margin-bottom: 10px;
+}
+.rodape-conteudo a{
+
+    color: currentColor ;
+    text-decoration: none;
+}
+
+.rodape-conteudo p{
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+.rodape-final{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+    border-top: 1px solid #ebebeb;;
+}
+.rodape-final span{
+    font-family: MuseoModerno;
+    color: #9d9d9d;
+    font-weight: 700;
+}
+
+.rodape-final > div{
+    display: flex;
+    align-items: center;
+}
+.rodape-final-direito img{
+    padding-left: 20px;
+}
+
+.rodape-final-esquerdo img{
+    padding-right: 20px;
+}
+
+
+@media( max-width: 700px){
+    .logo {
+
+       
+    }
+    .menu{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: #18335f;
+        width: 50%;
+        border-right: 2px solid #e28d40;
+        padding: 50px;
+    }
+
+    .menu-ativo{
+        display: block;
+    }
+
+    .menu-botao{
+        display: inline;
+    }
+
+    .menu-fechar{
+        height: 40px;
+        width: 40px;
+        background: #e28d40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        position: absolute;
+        right: -20px;
+        top: 45px;
+
+    }
+    .menu-logo{
+        display: block;
+        max-width: 120px;
+    }
+
+    .menu-fechar img{
+        color: #fff;
+    }
+
+    .menu-titulo{
+        display: block;
+        color: #e28f40;
+        font-size: 1.8rem;
+        margin-top: 50px;
+    }
+
+    .menu-list{
+
+        flex-direction: column;
+        
+    }
+
+    .menu-item{
+
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-size: .9rem;
+    }
+
+    .menu-item:hover{
+        background: transparent;
+    }
+
+    .menu-sublist{
+        display: flex;
+        position: static;
+        background-color: transparent;
+        padding-left: 20px;
+
+    }
+
+    .cabecalho{
+
+      
+        padding: 0 16px;
+    }
+    .fale-conosco{
+        margin-top: 70px;
+        justify-content: center;
+    }
+
+    .fale-conosco-img {
+        display: none;
+    }
+    .fale-conosco-texto {
+        text-align: center;
+        padding: 24px 16px;
+    }
+
+    .perguntas-frequentes{
+
+        flex-direction: column;
+        padding:5px;
+        padding-top: 120px;
+    }
+
+    .perguntas-frequentes-texto{
+        width: 100%;
+    }
+    .coluna{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .linha{
+        flex-direction: column;
+    }
+
+    .rodape-conteudo{
+
+        flex-direction: column;
+        padding-bottom: 0;
+       
+    }
+    .rodape-conteudo > div{
+
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .rodape-final{
+
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .rodape-final > div{
+
+        justify-content: center;
+    }
+
+    .rodape-final-esquerdo{
+        margin-bottom: 20px ;
+    }
+}
+
+/*AQUI COMEÇA A SEÇÃO NOVA DA PÁGINA*/
+
+.produtos{
+    background-color: #f4f4f4;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.produtos> p {
+    font-weight: 700;
+    color: #484848;
+    margin-top: 80px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+
+.categorias{
+   
+    max-width: 1280px;
+    margin: 0;
+    display: flex;
+    border: 2px solid #e28f40;
+    border-radius: 16px;
+    outline: none;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.categoria-item {
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid #e28f40;
+}
+
+.categoria-item:nth-child(1){
+    border-left: none;
+}
+
+.categoria-item svg{
+
+    margin-right: 5px;
+}
+
+.categoria-item svg path{
+    stroke: currentColor;
+}
+
+.categoria-item:hover span{
+    color: #e28f40;
+}
+
+.categoria-item:hover svg path{
+    stroke: #e28f40;
+}
+
+.categoria-item-ativo{
+    background: #e28f40;
+    color: #fff !important;
+}
+
+.categoria-item-ativo:hover span{
+    color: #fff;
+}
+
+.categoria-item-ativo:hover svg path{
+    stroke: #fff;
+}
+
+.produto-lista{
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produto-lista-ativa{
+    display: flex;
+}
+
+.produto-item{
+    background: #fff;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 3%);
+    border-radius: 24px;
+    width: calc(33% - 32px);
+    padding: 36px 32px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-item img{
+    width: 100%;
+ 
+}
+.produto-descricao{
+    font-family: MuseoModerno;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    padding-bottom: 24px;
+    color: #484848;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.produto-formapag{
+    margin: 0;
+    color: #1e3e74;
+    font-weight: 700;
+}
+
+.produto-valor{
+    color: #e28f40;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+}
+
+.produto-valor small{
+    font-size: 16px;
+    padding-top: 20px;
+    margin-right: 10px;
+
+}
+
+.produto-valor span{
+
+    font-size: 48px;
+}
+
+.produto-avista{
+    color: #9d9d9d;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.produto-item button{
+
+    width: fit-content;
+}
+
+.lista-perguntas{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 6 1;
+}
+
+.pergunta-item{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.pergunta-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 32px;
+    font-weight: bold;
+}
+
+.pergunta-cabecalho svg path{
+    stroke: #e28f40;
+    fill: #e28f40;
+}
+
+.pergunta-conteudo{
+    display: none;
+    padding: 0 32px;
+    text-align: justify;
+}
+
+.pergunta-item-ativo .pergunta-conteudo{
+display: block;
+}
+
+@media( max-width: 700px){
+
+    .produto-lista{
+        flex-direction: column;
+    
+    }
+
+    .produto-item{
+        width: 100%;
+    }
+}
