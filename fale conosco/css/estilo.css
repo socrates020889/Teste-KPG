@@ -30,7 +30,7 @@ input, textarea {
     position: fixed;
     width: 100vw;
     top: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     
 
     
@@ -90,7 +90,7 @@ input, textarea {
 }
 
 .menu-list{
-    list-style: none;
+    list-style:none;
     margin: 0;
     padding: 0;
     display: flex ;
@@ -109,6 +109,10 @@ input, textarea {
 
 .menu-fundo-ativo{
     display: block;
+}
+
+.menu-fechar{
+    display: none;
 }
 
 .fale-conosco{
